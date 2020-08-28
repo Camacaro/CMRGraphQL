@@ -1,0 +1,11 @@
+input UsuarioInput {
+  nombre: String!
+  apellido: String!
+  email: String!
+  password: String!
+}
+
+input AutenticarInput {
+  email: String!
+  password: String!
+}

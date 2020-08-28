@@ -1,10 +1,14 @@
-const { ApolloServer, gql } = require("apollo-server");
-const { readFileSync } = require('fs');
-const { join } = require('path');
+const { ApolloServer } = require("apollo-server");
+const { mergeTypeDefs, mergeResolvers } = require('@graphql-tools/merge');
 
 const conectarDB = require("./config/db");
-const resolvers = require("./db/resolvers");
-const typeDefs = readFileSync( join(__dirname, 'db', 'schema.graphql'), 'utf-8' );
+
+const usuarioTypeDefs = require('./usuarios/usuario.typeDefs')
+const usuarioResolvers = require('./usuarios/usuario.resolver')
+
+
+const typeDefs = mergeTypeDefs(usuarioTypeDefs, { all: true });
+const resolvers = mergeResolvers([ usuarioResolvers ]);
 
 conectarDB()
 

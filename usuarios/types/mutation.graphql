@@ -1,0 +1,5 @@
+
+type Mutation {
+  nuevoUsuario (input: UsuarioInput): Usuario
+  autenticarUsuario (input: AutenticarInput): Token
+}
