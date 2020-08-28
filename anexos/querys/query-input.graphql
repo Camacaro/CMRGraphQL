@@ -1,0 +1,8 @@
+# Write your query or mutation here
+query {
+  obtenerCursos(input: {
+    tecnologia: "React"
+  }) {
+    titulo
+  }
+}

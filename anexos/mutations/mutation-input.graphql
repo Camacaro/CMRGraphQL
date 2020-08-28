@@ -1,0 +1,18 @@
+mutation nuevoUsuario($input: UsuarioInput) {
+  nuevoUsuario(input: $input){
+    id # Campos a retornar
+    nombre
+    apellido
+    email
+  }
+}
+
+# Input
+{
+  "input": {
+    "nombre": "jesus",
+    "apellido": "camacaro",
+    "email": "jesus@hotmail.com",
+    "password": "123456"
+  }
+}

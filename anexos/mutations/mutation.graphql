@@ -1,0 +1,3 @@
+mutation nuevoUsuario  { # nombre de funcion, comunmente se le pone igual al resolver
+  nuevoUsuario # Resolvers
+}

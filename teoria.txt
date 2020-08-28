@@ -1,0 +1,31 @@
+
+Anexos
+index.js = levantar servidor de apollo server 
+crm-graphql
+psc5ZxrGyJPBoOoz
+
+Terminos
+
+Query = Sentencia donde declaramos que campos o datos queremos, tambien soporta parametros (input) Es universal
+independinete del lenguaje donde se escriba.
+El query representa el R de un CRUD, solo podemos leer
+
+Mutation = Sentencia donde declaramos que campos o datos queremos,  es independinete del lenguaje
+El Mutation representa el CUD de un CRUD, con el podemos, mutar la base datos, crear, actualizar y borrar
+
+Schema = Describe los tipos de objetos, queries y datos de la app, query es obligatorio en el schema,
+tambien usan typing para decir de que tipo es una variable, En sí el schema define un objeto como una interfas
+
+Resolvers = son funciones que son responsables de retornar los valores que existen en los schemas. 
+El nombre de los schemas deben de ser iguales al de los resolvers 
+Recibe tres parametros, 
+(1) contiene los resultados del resolvers padre, consulta anidadas
+(2) el input, variable que recibe des query
+(3) context: es un objeto que se comparten entre todos los resolvers, se crea en el new ApolloServer y lo puedo leer en todos los resolvers
+(4) info: informacion sobre la consulta 
+
+Herramienta de Graphql en la URL 
+Se conone como playground editor de de Graphql
+
+Tipos de datos en Graphql
+INT, Float, String, ID, Boolean

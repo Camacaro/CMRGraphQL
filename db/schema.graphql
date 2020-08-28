@@ -1,0 +1,36 @@
+
+# TYPES
+type Usuario {
+  id: ID
+  nombre: String
+  apellido: String
+  email: String
+  creado: String
+}
+
+type Token {
+  token: String
+}
+
+# INPUT
+input UsuarioInput {
+  nombre: String!
+  apellido: String!
+  email: String!
+  password: String!
+}
+
+input AutenticarInput {
+  email: String!
+  password: String!
+}
+
+
+type Query {
+  obtenerCurso: String
+}
+
+type Mutation {
+  nuevoUsuario (input: UsuarioInput): Usuario
+  autenticarUsuario (input: AutenticarInput): Token
+}

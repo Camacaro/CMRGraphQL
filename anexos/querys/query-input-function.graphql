@@ -1,0 +1,13 @@
+# Write your query or mutation here
+query obtenerCursos( $input: CursoInput! ) {
+  obtenerCursos(input: $input ) {
+    titulo
+  }
+}
+
+# seccion query variables or  GRAPHQL VARIABLES
+{
+  "input": {
+    "tecnologia": "React"
+  }
+}
