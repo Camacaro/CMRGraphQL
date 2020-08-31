@@ -1,0 +1,9 @@
+
+
+input ClienteInput {
+  nombre: String!
+  apellido: String!
+  empresa: String!
+  email: String!
+  telefono: String
+}

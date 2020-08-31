@@ -1,0 +1,17 @@
+mutation nuevoUsuario($input: UsuarioInput) {
+  nuevoUsuario(input: $input){
+    id
+    nombre
+  }
+}
+
+
+# query variables
+{
+  "input": {
+    "nombre": "jesus",
+    "apellido": "camacaro",
+    "email": "jesus@mail.com",
+    "password": "123456"
+  }
+}

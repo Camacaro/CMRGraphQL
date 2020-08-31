@@ -2,9 +2,9 @@
 
 const jwt = require('jsonwebtoken');
 
-module.exports.verificarToken = async (token, seed) => {
+module.exports.verificarToken = (token, seed) => {
 
-  const payload = await jwt.verify(token, seed);
+  const payload = jwt.verify(token, seed);
 
   return payload;
 }

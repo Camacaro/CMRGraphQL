@@ -1,8 +1,8 @@
 const { verificarToken } = require("../../../helpers/verificarToken")
 
-module.exports.obtenerUsuario = async (_, { token }) => {
+module.exports.obtenerUsuario =  (_, { token }) => {
 
-  const usuarioId = await verificarToken(token, process.env.SEED_TOKEN)
+  const usuarioId = verificarToken(token, process.env.SEED_TOKEN)
 
   return usuarioId;
 }

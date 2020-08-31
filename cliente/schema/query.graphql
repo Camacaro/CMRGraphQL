@@ -1,0 +1,6 @@
+
+type Query {
+  obtenerClientes: [Cliente]
+  obtenerClientesVendedor: [Cliente]
+  obtenerCliente(id: ID!): Cliente
+}
