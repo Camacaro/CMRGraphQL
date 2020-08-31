@@ -1,17 +1,17 @@
 const { ApolloServer } = require("apollo-server");
 const { mergeTypeDefs, mergeResolvers } = require('@graphql-tools/merge');
 
+const { verificarToken } = require("./helpers/verificarToken");
 const conectarDB = require("./config/db");
 
-const usuarioTypeDefs = require('./usuarios/usuario.typeDefs')
-const usuarioResolvers = require('./usuarios/usuario.resolvers')
+const usuarioTypeDefs = require('./apis/usuarios/usuario.typeDefs')
+const usuarioResolvers = require('./apis/usuarios/usuario.resolvers')
 
-const productoTypeDefs = require('./productos/producto.typeDefs')
-const productoResolvers = require('./productos/producto.resolvers')
+const productoTypeDefs = require('./apis/productos/producto.typeDefs')
+const productoResolvers = require('./apis/productos/producto.resolvers')
 
-const clienteTypeDefs = require('./cliente/cliente.typeDefs')
-const clienteResolvers = require('./cliente/cliente.resolvers');
-const { verificarToken } = require("./helpers/verificarToken");
+const clienteTypeDefs = require('./apis/cliente/cliente.typeDefs')
+const clienteResolvers = require('./apis/cliente/cliente.resolvers');
 
 const typeDefs = mergeTypeDefs([
   usuarioTypeDefs,

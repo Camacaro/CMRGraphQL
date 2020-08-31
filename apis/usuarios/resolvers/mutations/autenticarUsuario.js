@@ -1,7 +1,7 @@
 
 const bcryptjs = require('bcryptjs');
 const Usuario = require("../../usuario.model");
-const { crearToken } = require('../../../helpers/crearToken');
+const { crearToken } = require('../../../../helpers/crearToken');
 
 module.exports.autenticarUsuario = async (_, { input }) => {
 

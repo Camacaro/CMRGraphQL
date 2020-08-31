@@ -1,4 +1,4 @@
-const { verificarToken } = require("../../../helpers/verificarToken")
+const { verificarToken } = require("../../../../helpers/verificarToken")
 
 module.exports.obtenerUsuario =  (_, { token }) => {
 
