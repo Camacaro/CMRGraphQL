@@ -7,3 +7,4 @@ module.exports.crearToken = (usuario, seed, expiresIn) => {
 
   return jwt.sign( { id, email, nombre, apellio }, seed, { expiresIn } )
 }
+

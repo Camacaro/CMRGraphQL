@@ -4,7 +4,7 @@ const { mergeTypeDefs, mergeResolvers } = require('@graphql-tools/merge');
 const conectarDB = require("./config/db");
 
 const usuarioTypeDefs = require('./usuarios/usuario.typeDefs')
-const usuarioResolvers = require('./usuarios/usuario.resolver')
+const usuarioResolvers = require('./usuarios/usuario.resolvers')
 
 
 const typeDefs = mergeTypeDefs(usuarioTypeDefs, { all: true });

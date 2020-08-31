@@ -1,4 +1,5 @@
 
 type Query {
   obtenerCurso: String
+  obtenerUsuario (token: String!): Usuario
 }
