@@ -1,0 +1,9 @@
+query obtenerProductos {
+  obtenerProductos {
+    id
+    nombre
+    precio
+    existencia
+    creado
+  }
+}

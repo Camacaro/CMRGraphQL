@@ -1,0 +1,15 @@
+
+
+mutation autenticarUsuario($input: AutenticarInput) {
+  autenticarUsuario(input: $input) {
+    token
+  }
+}
+
+# query variables
+{
+  "input": {
+    "email": "ale@hotmail.com",
+    "password": "123456"
+  }
+}

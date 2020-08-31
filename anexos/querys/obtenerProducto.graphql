@@ -1,0 +1,13 @@
+query obtenerProducto($id: ID!) {
+  obtenerProducto(id: $id) {
+    id
+    nombre
+    precio
+    existencia
+  }
+}
+
+# query variables
+{
+  "id": "5f4d056e96457626cd583123"
+}

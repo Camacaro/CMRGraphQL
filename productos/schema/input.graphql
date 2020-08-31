@@ -1,0 +1,6 @@
+
+input ProductoInput {
+  nombre: String!
+  existencia: Int!
+  precio: Float!
+}

@@ -1,0 +1,18 @@
+mutation nuevoProducto($input: ProductoInput){
+	nuevoProducto(input: $input) {
+    id
+    nombre
+    existencia
+    precio
+    creado
+  } 
+} 
+
+# query variables
+{
+  "input": {
+    "nombre": "Tablet",
+    "existencia": 5,
+    "precio": 10000
+  }
+}

@@ -6,9 +6,12 @@ const conectarDB = require("./config/db");
 const usuarioTypeDefs = require('./usuarios/usuario.typeDefs')
 const usuarioResolvers = require('./usuarios/usuario.resolvers')
 
+const productoTypeDefs = require('./productos/producto.typeDefs')
+const productoResolvers = require('./productos/producto.resolvers')
 
-const typeDefs = mergeTypeDefs(usuarioTypeDefs, { all: true });
-const resolvers = mergeResolvers([ usuarioResolvers ]);
+
+const typeDefs = mergeTypeDefs([usuarioTypeDefs, productoTypeDefs], { all: true });
+const resolvers = mergeResolvers([ usuarioResolvers, productoResolvers ]);
 
 conectarDB()
 

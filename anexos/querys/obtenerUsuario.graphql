@@ -1,0 +1,10 @@
+query obtenerUsuario($token: String!) {
+  obtenerUsuario(token: $token){
+    id
+  }
+}
+
+# query variables
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNDk3M2EwYzIzOWUwMTQxZWM3ZDI1OSIsImVtYWlsIjoiYWxlQGhvdG1haWwuY29tIiwibm9tYnJlIjoiamVzdXMiLCJpYXQiOjE1OTg4ODEwMjksImV4cCI6MTU5ODk2NzQyOX0.D3zyLe2HTTcQUBA1KcEgLQPmTgIPBkiF05kl9uPafD8"
+}
