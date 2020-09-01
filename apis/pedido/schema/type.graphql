@@ -1,0 +1,23 @@
+
+
+
+enum EstadoPedido {
+  PENDIENTE
+  COMPLETADO
+  CANCELADO
+}
+
+type PedidoGrupo {
+  id: ID
+  cantidad: Int
+}
+
+type Pedido {
+  id: ID
+  pedido: [PedidoGrupo]
+  total: Float
+  cliente: ID
+  vendedor: ID
+  fecha: String
+  estado: EstadoPedido
+}

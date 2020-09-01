@@ -1,0 +1,13 @@
+
+
+input PedidoProductoInput {
+  id: ID
+  cantidad: Int
+}
+
+input PedidoInput {
+  pedido: [PedidoProductoInput]
+  total: Float!
+  cliente: ID!
+  estado: EstadoPedido
+}

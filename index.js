@@ -13,16 +13,21 @@ const productoResolvers = require('./apis/productos/producto.resolvers')
 const clienteTypeDefs = require('./apis/cliente/cliente.typeDefs')
 const clienteResolvers = require('./apis/cliente/cliente.resolvers');
 
+const pedidoTypeDefs = require('./apis/pedido/pedido.typeDefs')
+const pedidoResolvers = require('./apis/pedido/pedido.resolvers');
+
 const typeDefs = mergeTypeDefs([
   usuarioTypeDefs,
   productoTypeDefs,
-  clienteTypeDefs
+  clienteTypeDefs,
+  pedidoTypeDefs
 ], { all: true });
 
 const resolvers = mergeResolvers([
   usuarioResolvers,
   productoResolvers,
-  clienteResolvers
+  clienteResolvers,
+  pedidoResolvers
 ]);
 
 conectarDB()
