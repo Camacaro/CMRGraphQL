@@ -8,3 +8,8 @@ type Cliente {
   telefono: String
   vendedor: ID
 }
+
+type TopCliente {
+  total: Float
+  cliente: [Cliente]
+}

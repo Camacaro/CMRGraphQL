@@ -4,12 +4,14 @@ const { obtenerClientesVendedor } = require("./resolvers/querys/obtenerClientesV
 const { obtenerCliente } = require("./resolvers/querys/obtenerCliente");
 const { actualizarCliente } = require("./resolvers/mutations/actualizarCliente");
 const { eliminarCliente } = require("./resolvers/mutations/eliminarCliente");
+const { mejoresClientes } = require("./resolvers/querys/mejoresClientes");
 
 const resolvers = {
   Query: {
     obtenerClientes,
     obtenerClientesVendedor,
-    obtenerCliente
+    obtenerCliente,
+    mejoresClientes
   },
   Mutation: {
     nuevoCliente,
