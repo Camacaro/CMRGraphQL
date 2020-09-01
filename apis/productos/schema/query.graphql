@@ -2,4 +2,5 @@
 type Query {
   obtenerProductos: [Producto]
   obtenerProducto(id: ID!): Producto
+  buscarProducto(texto: String!): [Producto]
 }
