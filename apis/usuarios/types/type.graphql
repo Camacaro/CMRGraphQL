@@ -9,3 +9,8 @@ type Usuario {
 type Token {
   token: String
 }
+
+type TopVendedor {
+  total: Float
+  vendedor: [Usuario]
+}
