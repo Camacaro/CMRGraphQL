@@ -37,13 +37,13 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: ({req}) => {
-    
+
     const token = req.headers['authorization'] || ''
 
     if(token) {
 
       try {
-        const usuario = verificarToken(token, process.env.SEED_TOKEN);
+        const usuario = verificarToken(token.replace('Bearer ', ''), process.env.SEED_TOKEN);
         
         return {
           usuario
